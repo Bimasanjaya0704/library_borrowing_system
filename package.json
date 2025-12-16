@@ -1,0 +1,17 @@
+{
+  "name": "library_borrowing_system",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "bimas",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6"
+  }
+}
