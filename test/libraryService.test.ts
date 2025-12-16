@@ -1,5 +1,5 @@
 import { Book } from "../src/book";
-import { LibrayService } from "../src/libraryService";
+import { LibraryService } from "../src/libraryService";
 import { Member } from "../src/member";
 
 // add Book
@@ -11,7 +11,7 @@ import { Member } from "../src/member";
 
 describe("LibraryService", () => {
   it("should add a book", () => {
-    const libraryService = new LibrayService();
+    const libraryService = new LibraryService();
     const book = new Book("b1", "The 1984", "George Orwell");
     const book2 = new Book("b2", "To Kill a Mockingbird", "Harper Lee");
     libraryService.addBook(book);
@@ -21,7 +21,7 @@ describe("LibraryService", () => {
   });
 
   it("should add a member", () => {
-    const libraryService = new LibrayService();
+    const libraryService = new LibraryService();
     const member = new Member("1", "Alice");
     libraryService.registerMember(member);
 
@@ -29,7 +29,7 @@ describe("LibraryService", () => {
   });
 
   it("should borrow a book", () => {
-    const libraryService = new LibrayService();
+    const libraryService = new LibraryService();
     const book = new Book("b1", "The 1984", "George Orwell");
     const member = new Member("1", "Alice");
     libraryService.addBook(book);
@@ -42,7 +42,7 @@ describe("LibraryService", () => {
   });
 
   it("should return a book", () => {
-    const libraryService = new LibrayService();
+    const libraryService = new LibraryService();
     const book = new Book("b1", "The 1984", "George Orwell");
     const member = new Member("1", "Alice");
     libraryService.addBook(book);
@@ -55,7 +55,7 @@ describe("LibraryService", () => {
   });
 
   it("should search books by title", () => {
-    const libraryService = new LibrayService();
+    const libraryService = new LibraryService();
     const book1 = new Book("b1", "The 1984", "George Orwell");
     const book2 = new Book("b2", "The Kill a Mockingbird", "Harper Lee");
     const book3 = new Book("b3", "Brave New World", "Aldous Huxley");
@@ -69,7 +69,7 @@ describe("LibraryService", () => {
   });
 
   it("should search books by author", () => {
-    const libraryService = new LibrayService();
+    const libraryService = new LibraryService();
     const book1 = new Book("b1", "The 1984", "George Orwell");
     const book2 = new Book("b2", "The Kill a Mockingbird", "Harper Lee");
     const book3 = new Book("b3", "Brave New World", "Aldous Huxley");

@@ -1,7 +1,7 @@
 import { Book } from "./book";
 import { Member } from "./member";
 
-export class LibrayService {
+export class LibraryService {
   public books: Book[] = [];
   public members: Member[] = [];
 
